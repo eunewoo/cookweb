@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1">	
+		<title>코딩 부스터</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/nampolice.css">
+	</head>
+	<body>
+		<style type="text/css">
+			blockquote {
+				background-color: #f9f9f9;
+				border-left: 10px solid #cccccc;
+				margin: 1.5em 10px;
+				padding: 0.5em 10px;
+				quotes: "\201C""\201D""\2018""\2019";
+			}
+			blockquote:before {
+				color: #cccccc;
+				content: open-quote;
+				font-size: 3em;
+				line-height: 0.1em;
+				margin-left: 0.25em;
+				margin-right: 0.25em;
+				vertical-align: -0.4em;
+			}
+			blockquote:after {
+				color: #cccccc;
+				content: close-quote;
+				font-size: 3em;
+				line-height: 0.1em;
+				margin-left: 0.25em;
+				vertical-align: -0.4em;
+			}
+
+		</style>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>	
+						</button>
+						<a class="navbar-brand" href="index.html">남대문 방순대</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">일정<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown">										<li><a href="chefs.html">오늘의역할</a></li>
+										<li><a href="planner.html">주간휴무일정</a></li>
+										<li><a href="planner.html">월간일정</a></li>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">메뉴<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown">										<li><a href="#">오늘의메뉴</a></li>
+										<li><a href="#">주간메뉴</a></li>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">아카이브<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown">										<li><a href="job.html?jobName=security">음식후기</a></li>
+										<li><a href="job.html?jobName=cook">요리꿀팁</a></li>
+										<li><a href="cheflist.html">셰프들</a></li>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">관리자<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="login.html">로그인</a></li>
+									<li><a href="login.html">회원가입</a></li>
+								</ul>
+							</li>	
+						</ul>
+					</div>
+				</div>
+			</nav>
+	
+
+		<div class="container">
+			<div class="row">
+				<ul class="list-group">
+					<a href="#" class="list-group-item active">왕고 안현식</a><br>
+					<a href="#" class="list-group">투고 박지훈</a><br>
+					<a href="#" class="list-group">쓰리고 김승찬</a><br>
+					<a href="#" class="list-group">포고 최은우</a>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QWJzDOUpqZk"></iframe>
+				</div>
+			</div>
+			<hr>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label>comment: </label>
+					<textarea class="form-control" rows="5" id="commentContent" name="commentContent"></textarea>
+					<br>
+					<button type="submit" class="btn pull-right">등록</button>
+				</div>
+			</form>
+			<hr>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title">
+								<span class="glyphicon glyphicon-tags"></span>
+								&nbsp;&nbsp;남대문 요리왕들
+							</h3>	
+						</div>
+						<div class="panel-body">
+							<div class="media">
+								<div class="media-left">
+									<a href="#">
+										<img class="media-object" src="images/chef.jpg" alt="요리왕 이미지" style="width:150px; height:150px;">
+									</a>
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">최은우</h4><br>
+										남대문 취사의 요리왕이 될 사람입니다.
+								</div>
+							</div>
+						</div>
+						<table class="table">
+							<thead>
+								<tr>
+									<th>대원명</th>
+									<th>기수</th>
+									<th>별명</th>
+									<th>대표요리</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>박지훈</td>
+									<td>1130</td>
+									<td>전업요리사</td>
+									<td>제육볶음</td>
+								</tr>
+								<tr>
+									<td>안현식</td>
+									<td>1122</td>
+									<td>짬마스터</td>
+									<td>꼬꼬아치</td>
+								</tr>
+								<tr>
+									<td>김승찬</td>
+									<td>1134</td>
+									<td>막가파</td>
+									<td>돈민찌</td>
+								</tr>
+								<tr>
+									<td>최은우</td>
+									<td>1135</td>
+									<td>요리왕</td>
+									<td>미역국</td>
+								</tr>
+								<tr>
+									<td>김민성</td>
+									<td>1133</td>
+									<td>신입생</td>
+									<td>미정</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="panel-footer">
+							<blockquote>Grow day by day</blockquote>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+
+
+
+		<footer style="background-color: #B98D72; color: white;">
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-2" style="text-align: center;"><h5>Copyright &copy; 2021</h5><h5>최은우(Eunwoo Choi)</h5></div>
+					<div class="col-sm-4"><h4>복무자 소개</h4><p>저는 남대문 방순대에서 군복무 중인 1135기 최은우 입니다. 보직은 취사를 맡고 있으며 정성이 가득 담긴 요리를 추구합니다. 그리고 무엇보다도 코딩을 사랑합니다.</p></div>
+					<div class="col-sm-2"><h4 style="text-align: center;">셰프</h4>
+						<div class="list-group">
+							<a href="job.html?jobName=cook" class="list-group-item">안현식</a>
+							<a href="job.html?jobName=work" class="list-group-item">박지훈</a>
+							<a href="job.html?jobName=traffic" class="list-group-item">김승찬</a>
+							<a href="profile.html" class="list-group-item">최은우</a>
+							<a href="job.html?jobName=security" class="list-group-item">김민성&nbsp;<span class="badge">new</span></a>
+						</div>
+					</div>
+					<div class="col-sm-2"><h4 style="text-align: center;">참고사이트</h4>
+						<div class="list-group">
+							<a href="https://www.ourhometfs.co.kr/main.our" class="list-group-item">아워홈tos</a>
+							<a href="https://www.google.co.kr/" class="list-group-item">구글</a>
+							<a href="https://www.naver.com/" class="list-group-item">네이버</a>
+							<a href="http://soldiercal.lilysoul.pe.kr/" class="list-group-item">전역일계산기</a>
+						</div>
+					</div>
+					<div class="col-sm-2"><h4 style="text-align: center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;by최은우</h4></div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="row">
+			<div class="modal" id="modal3" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							투폰을 쓰는 당신..
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<img src="images/catchyou.jpg" id="imagepreview" style="width: 300px; height: 300px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+	</body>
+</html>

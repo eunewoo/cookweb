@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale="1">	
+		<title>cook139</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/nampolice.css">
+	</head>
+	<body>
+		<style type="text/css">
+			.jumbotron {
+				background-image: url('images/nampolice.jpg');
+				background-size: cover;
+				background-position: top;
+				text-shadow: black 0.2em 0.2em 0.2em;
+				color: white;
+			}
+		</style>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>	
+					</button>
+					<a class="navbar-brand" href="index.html">남대문 방순대</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">일정<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">										<li><a href="chefs.html">오늘의역할</a></li>
+									<li><a href="planner.html">주간휴무일정</a></li>
+									<li><a href="planner.html">월간일정</a></li>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">메뉴<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">										<li><a href="#">오늘의메뉴</a></li>
+									<li><a href="#">주간메뉴</a></li>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">아카이브<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">										<li><a href="job.html?jobName=security">음식후기</a></li>
+									<li><a href="job.html?jobName=cook">요리꿀팁</a></li>
+									<li><a href="cheflist.html">셰프들</a></li>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">관리자<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="login.html">로그인</a></li>
+								<li><a href="login.html">회원가입</a></li>
+							</ul>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="text-center">남대문경찰서 취사를 소개합니다.</h1>
+				<p class="text-center">남대문경찰서 취사는 전세계적으로 극찬을 받고 있는 레스트랑 입니다. 5명의 의경셰프가 있고,<br>
+				1명의 오너셰프 영양사님이 계십니다.</p>
+				<p class="text-center"><a class="btn btn-primary btn-lg" href="https://ap.police.go.kr/ap/main.do" role="button">오늘의메뉴 보러가기</a></p>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<h4>의경의 특징</h4>
+					<p>의경은 남성들이 국방의 의무를 수행하는 방식 중에 하나입니다. 일반 육군에 비해 장점들이 많아서 인기가 많습니다.</p>
+					<p><a class="btn btn-default" data-target="#modal1" data-toggle="modal">꿀인 이유 알아보기</a></p>
+				</div>
+				<div class="col-sm-4">
+					<h4>남대문 방순대의 특징</h4>
+					<p>남대문 경찰서는 중구의 서울역 맞은편에 위치하고 있다. 총 7층으로 구성되어 있고 6층에는 방순대가 거주하고 있다.</p>
+					<p><a class="btn btn-default" data-target="#modal2" data-toggle="modal">약도보기</a></p>
+				</div>			
+				<div class="col-sm-4">
+					<h4>남대문 방순대 취사</h4>
+					<p>남대문 방순대에는 취사라는 보직으로 4명의 대원이 근무하고 있다. 협력업체는 아워홈이고 총책임자로 영양사 1명이 근무한다.</p>
+					<p><a class="btn btn-default" href="http://mall.ourhome.co.kr">아워홈사이트</a></p>
+				</div>
+			</div>
+			<hr>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title"><span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;보직 목록</h3>
+				</div>
+				<div class="panel-body">
+					<div class="media">
+						<div class="media-left">
+							<a href="job.html?jobName=cook"><img class="media-object" src="images/frypan.jpg" alt="취사장 후라이팬 이미지"></a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">취사</a>&nbsp;<span class="badge">center</span></h4>
+							남대문 방순대 취사는 대원들에게 제공될 식사를 요리하는 보직입니다.
+							아침, 점심, 저녁을 다 준비하며 4명의 대원이 근무하고 있습니다.
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="media-left">
+							<a href="job.html?jobName=work"><img class="media-object" src="images/computer.jpg" alt="행정반 컴퓨터 이미지"></a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">행정</a>&nbsp;<span class="badge">center</span></h4>
+							남대문 방순대 행정은 방순대 내의 행정일을 도맡아 하는 보직입니다. 6시에서 18시까지 근무하며 3명의 대원이 근무하고 있습니다. 
+						</div>
+					</div>
+					<hr>
+					<div class="media">
+						<div class="media-left">
+							<a href="job.html?jobName=traffic"><img class="media-object" src="images/whistle.jpg" alt="교통경찰 호루라기 이미지"></a>
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading"><a href="#">교통</a>&nbsp;<span class="badge">normal</span></h4>
+							남대문 방순대 교통은 외부에 버스를 타고 나가 차량 통행을 관리하는 보직입니다. 13시에서 21시까지 근무하며 3소대로 구성되어 있습니다.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer style="background-color: #B98D72; color: white;">
+			<div class="container">
+				<br>
+				<div class="row">
+					<div class="col-sm-2" style="text-align: center;"><h5>Copyright &copy; 2021</h5><h5>최은우(Eunwoo Choi)</h5></div>
+					<div class="col-sm-4"><h4>복무자 소개</h4><p>저는 남대문 방순대에서 군복무 중인 1135기 최은우 입니다. 보직은 취사를 맡고 있으며 정성이 가득 담긴 요리를 추구합니다. 그리고 무엇보다도 코딩을 사랑합니다.</p></div>
+					<div class="col-sm-2"><h4 style="text-align: center;">셰프</h4>
+						<div class="list-group">
+							<a href="job.html?jobName=cook" class="list-group-item">안현식</a>
+							<a href="job.html?jobName=work" class="list-group-item">박지훈</a>
+							<a href="job.html?jobName=traffic" class="list-group-item">김승찬</a>
+							<a href="profile.html" class="list-group-item">최은우</a>
+							<a href="job.html?jobName=security" class="list-group-item">김민성&nbsp;<span class="badge">new</span></a>
+						</div>
+					</div>
+					<div class="col-sm-2"><h4 style="text-align: center;">참고사이트</h4>
+						<div class="list-group">
+							<a href="https://www.ourhometfs.co.kr/main.our" class="list-group-item">아워홈tos</a>
+							<a href="https://www.google.co.kr/" class="list-group-item">구글</a>
+							<a href="https://www.naver.com/" class="list-group-item">네이버</a>
+							<a href="http://soldiercal.lilysoul.pe.kr/" class="list-group-item">전역일계산기</a>
+						</div>
+					</div>
+					<div class="col-sm-2"><h4 style="text-align: center;"><span class="glyphicon glyphicon-ok"></span>&nbsp;by최은우</h4></div>
+				</div>
+			</div>
+		</footer>
+
+		<div class="row">
+			<div class="modal" id="modal2" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							약도
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<img src="images/nammap.jpg" id="imagepreview" style="width: 400px; height: 500px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="modal" id="modal1" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							꿀인 의경
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							의경은 매주 1회 휴무날 외출을 나갈 수 있다. <br>
+							또한 취사는 일과과 규칙적이어서 계획적으로 살 수 있다.<br><br>
+							<img src="images/ax.jpg" id="imagepreview" style="width: 300px; height: 300px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="modal" id="modal3" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							투폰을 쓰는 당신..
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body" style="text-align: center;">
+							<img src="images/catchyou.jpg" id="imagepreview" style="width: 300px; height: 300px;">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+
+
+	</body>
+</html>

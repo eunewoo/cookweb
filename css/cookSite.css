@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+/*navbar 꾸미기*/
+
+* {
+	font-family: 'Nanaum Gothic';
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #bbbbbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 내비게이션 영역*/
+.navbar-default {
+	color: #ffffff;
+	background-color: #B98D72;
+}
+
+.navbar-default .navbar-text:hover,
+.navbar-default .navbar-text:focus { /* 내비게이션 제목에 마우스를 올렸을 때 */
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a { /* 내비게이션 기본 색상 */
+	color: white;
+}
+
+@media (max-width: 767px) { /*해상도가 작을 때 드랍다운 색상 */
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+		color: #ffffff;
+	}
+
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+		color: #bbbbbb;
+	}
+
+	.navbar-default .navbar-toggle .icon-bar {
+    	background-color: black;
+	}
+
+
+}
+
+
+
+
+
+
+
+
